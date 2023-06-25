@@ -4,3 +4,5 @@ select
     amount
 
 from {{ ref('stg_payments') }} 
+
+group by order_id
